@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Social Media Agent Workspace | LangGraph & HITL Platform</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Main App Wrap -->
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="app-sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-logo">🤖</div>
+                <div class="brand-text">
+                    <h1>AETHER AGENT</h1>
+                    <span>Social Media Engine v1.0</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-tab="dashboard" id="btn-tab-dashboard">
+                    <span class="nav-icon">📊</span> Dashboard & Workflow
+                </button>
+                <button class="nav-item" data-tab="scheduler" id="btn-tab-scheduler">
+                    <span class="nav-icon">📅</span> Calendar & Scheduler
+                </button>
+                <button class="nav-item" data-tab="integrations" id="btn-tab-integrations">
+                    <span class="nav-icon">⚙️</span> Settings & API Config
+                </button>
+            </nav>
+            
+            <div class="sidebar-system-status">
+                <div class="status-header">SYSTEM ENGINE</div>
+                <div class="status-item">
+                    <span class="status-dot green"></span>
+                    <span class="status-label">Cron Scheduler</span>
+                    <span class="status-value active-pulse">ACTIVE</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-dot green"></span>
+                    <span class="status-label">Slack Gateway</span>
+                    <span class="status-value">CONNECTED</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-dot green"></span>
+                    <span class="status-label">OAuth LinkedIn</span>
+                    <span class="status-value">VALID</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-dot green"></span>
+                    <span class="status-label">OAuth Twitter</span>
+                    <span class="status-value">VALID</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="app-main">
+            <!-- Header bar -->
+            <header class="app-header">
+                <div class="header-left">
+                    <h2 id="current-tab-title">Dashboard & Workflow</h2>
+                    <p class="header-subtitle" id="current-tab-subtitle">Generate posts, run LangGraph routines, and authorize queued outputs.</p>
+                </div>
+                <div class="header-right">
+                    <button class="btn btn-primary" id="btn-open-creator">
+                        <span class="btn-icon">⚡</span> Run Agent Workflow
+                    </button>
+                    <button class="btn btn-secondary btn-icon-only" id="btn-toggle-slack" title="Simulated Slack Inbox">
+                        💬 <span class="badge" id="slack-unread-badge">1</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Metrics Bar -->
+            <section class="metrics-grid">
+                <div class="metric-card card-glow-blue">
+                    <div class="metric-info">
+                        <span class="metric-title">Total Generated</span>
+                        <h3 class="metric-number" id="metric-total">24</h3>
+                    </div>
+                    <div class="metric-icon blue">🤖</div>
+                </div>
+                <div class="metric-card card-glow-amber">
+                    <div class="metric-info">
+                        <span class="metric-title">Awaiting Review</span>
+                        <h3 class="metric-number text-warn" id="metric-review">1</h3>
+                    </div>
+                    <div class="metric-icon amber">⏳</div>
+                </div>
+                <div class="metric-card card-glow-green">
+                    <div class="metric-info">
+                        <span class="metric-title">Active Schedules</span>
+                        <h3 class="metric-number text-success" id="metric-scheduled">2</h3>
+                    </div>
+                    <div class="metric-icon green">📅</div>
+                </div>
+                <div class="metric-card card-glow-purple">
+                    <div class="metric-info">
+                        <span class="metric-title">Successfully Published</span>
+                        <h3 class="metric-number text-purple" id="metric-published">1</h3>
+                    </div>
+                    <div class="metric-icon purple">🚀</div>
+                </div>
+            </section>
+
+            <!-- Tabs Contents -->
+            <div class="tabs-container">
+                
+                <!-- Tab: Dashboard & Workflow -->
+                <div class="tab-content active" id="tab-dashboard">
+                    <div class="dashboard-grid">
+                        
+                        <!-- Left Panel: LangGraph DAG Visualizer & Control -->
+                        <div class="glass-card panel-workflow">
+                            <div class="panel-header">
+                                <h3>LangGraph Cyclic State Machine</h3>
+                                <span class="badge badge-purple" id="workflow-status-badge">STANDBY</span>
+                            </div>
+                            
+                            <div class="workflow-viewport">
+                                <!-- LangGraph Dynamic Visualizer Grid -->
+                                <div class="langgraph-dag" id="langgraph-diagram">
+                                    <!-- START Node -->
+                                    <div class="dag-node" id="node-START">
+                                        <div class="node-wrapper">
+                                            <span class="node-icon">🚀</span>
+                                            <span class="node-name">Start</span>
+                                        </div>
+                                    </div>
+                                    <div class="dag-connector right-arrow font-connector"></div>
+
+                                    <!-- WEB_SEARCH Node -->
+                                    <div class="dag-node" id="node-WEB_SEARCH">
+                                        <div class="node-wrapper">
+                                            <span class="node-icon">🔍</span>
+                                            <span class="node-name">Web Search</span>
+                                        </div>
+                                        <span class="node-badge">Tool</span>
+                                    </div>
+                                    <div class="dag-connector right-arrow"></div>
+
+                                    <!-- IMAGE_GEN Node -->
+                                    <div class="dag-node" id="node-IMAGE_GEN">
+                                        <div class="node-wrapper">
+                                            <span class="node-icon">🎨</span>
+                                            <span class="node-name">Image Gen</span>
+                                        </div>
+                                        <span class="node-badge">Tool</span>
+                                    </div>
+                                    <div class="dag-connector right-arrow"></div>
+
+                                    <!-- DRAFT_POST Node -->
+                                    <div class="dag-node" id="node-DRAFT_POST">
+                                        <div class="node-wrapper">
+                                            <span class="node-icon">✍️</span>
+                                            <span class="node-name">Draft Post</span>
+                                        </div>
+                                        <span class="node-badge">Agent</span>
+                                    </div>
+                                    <div class="dag-connector right-arrow highlight-suspension"></div>
+
+                                    <!-- SLACK_HITL Node -->
+                                    <div class="dag-node hitl-gate" id="node-SLACK_HITL">
+                                        <div class="node-wrapper">
+                                            <span class="node-icon">🔒</span>
+                                            <span class="node-name">Slack HITL</span>
+                                        </div>
+                                        <span class="node-badge red">Checkpoint</span>
+                                    </div>
+                                    
+                                    <!-- Branch: REVISION Node (Cyclic) -->
+                                    <div class="dag-connector vertical-down"></div>
+                                    <div class="dag-node cyclic-revision" id="node-REVISION">
+                                        <div class="node-wrapper">
+                                            <span class="node-icon">🔄</span>
+                                            <span class="node-name">Revision</span>
+                                        </div>
+                                    </div>
+                                    <div class="dag-connector diagonal-up-left"></div>
+
+                                    <!-- Final Path: PUBLISH / SCHEDULE -->
+                                    <div class="dag-connector right-arrow success-path"></div>
+                                    <div class="dag-node success-gate" id="node-SCHEDULE">
+                                        <div class="node-wrapper">
+                                            <span class="node-icon">✅</span>
+                                            <span class="node-name">Publish / Queue</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="workflow-legend">
+                                <div class="legend-item"><span class="legend-dot active"></span> Running Node</div>
+                                <div class="legend-item"><span class="legend-dot tool"></span> Tool Call Node</div>
+                                <div class="legend-item"><span class="legend-dot hitl"></span> HITL Checkpoint</div>
+                                <div class="legend-item"><span class="legend-dot cyclic"></span> Cyclic Loopback</div>
+                            </div>
+                        </div>
+
+                        <!-- Right Panel: HITL Queue Inbox -->
+                        <div class="glass-card panel-inbox">
+                            <div class="panel-header">
+                                <h3>Human-in-the-Loop Inbox</h3>
+                                <span class="badge count-tag" id="inbox-count">1</span>
+                            </div>
+                            <div class="inbox-scrollable" id="hitl-inbox-container">
+                                <!-- Cards injected by app.js -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tab: Scheduler & Calendar -->
+                <div class="tab-content" id="tab-scheduler">
+                    <div class="scheduler-grid">
+                        
+                        <!-- Left side: Calendar Grid -->
+                        <div class="glass-card panel-calendar">
+                            <div class="panel-header">
+                                <div class="calendar-controls">
+                                    <button class="btn btn-secondary btn-sm" id="btn-prev-month">◀</button>
+                                    <h3 id="calendar-month-year">May 2026</h3>
+                                    <button class="btn btn-secondary btn-sm" id="btn-next-month">▶</button>
+                                </div>
+                                <span class="badge" id="calendar-count-badge">2 Scheduled</span>
+                            </div>
+                            
+                            <div class="calendar-wrapper">
+                                <div class="calendar-weekdays">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                <div class="calendar-days" id="calendar-days-grid">
+                                    <!-- Rendered dynamically -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right side: Scheduled Posts list -->
+                        <div class="glass-card panel-post-list">
+                            <div class="panel-header">
+                                <h3>Post Publishing Schedule</h3>
+                            </div>
+                            <div class="schedule-list" id="schedule-posts-list">
+                                <!-- Rendered dynamically -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tab: Settings & Integrations -->
+                <div class="tab-content" id="tab-integrations">
+                    <div class="settings-grid">
+                        
+                        <!-- Panel 1: Credentials & OAuth -->
+                        <div class="glass-card">
+                            <div class="panel-header">
+                                <h3>Platform OAuth & Credentials</h3>
+                            </div>
+                            <div class="settings-body">
+                                <div class="form-group">
+                                    <label>LinkedIn App Client ID</label>
+                                    <input type="text" class="form-control" value="linkedin_oauth_87c29a00f8c" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Twitter App API Key</label>
+                                    <input type="text" class="form-control" value="twitter_api_99b1a03f421" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Access Verification</label>
+                                    <button class="btn btn-secondary btn-full">Refresh Authentication Handles</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 2: Cron Schedules & Channels -->
+                        <div class="glass-card">
+                            <div class="panel-header">
+                                <h3>Cron Scheduling & Workflows</h3>
+                            </div>
+                            <div class="settings-body">
+                                <div class="form-group">
+                                    <label>LangGraph Trigger Cron Interval</label>
+                                    <select class="form-control" id="cron-interval-select">
+                                        <option value="*/60 * * * *">Every hour (*/60 * * * *)</option>
+                                        <option value="0 9 * * 1-5">Every Mon-Fri at 9:00 AM</option>
+                                        <option value="manual">Manual Trigger Only</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Slack Incoming Webhook URL</label>
+                                    <input type="password" class="form-control" value="https://hooks.slack.com/services/YOUR_WORKSPACE_ID/YOUR_CHANNEL_ID/YOUR_SECRET_TOKEN" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Slack Alert Channel</label>
+                                    <input type="text" class="form-control" value="#social-approvals">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Terminal logs at the bottom -->
+            <footer class="app-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-title">💻 LangGraph Agent Runtime Console</div>
+                    <div class="terminal-controls">
+                        <button class="btn-clear" id="btn-clear-logs">Clear Screen</button>
+                        <span class="status-indicator"><span class="pulse-dot"></span> Agent Daemon Syncing</span>
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminal-logs-container">
+                    <!-- Logs injected dynamically -->
+                </div>
+            </footer>
+        </main>
+
+        <!-- Slide-out Drawer: Simulated Slack Notification -->
+        <div class="slack-drawer" id="slack-drawer">
+            <div class="slack-header">
+                <div class="slack-header-title">
+                    <span class="slack-logo">💬</span>
+                    <div>
+                        <h4>Slack Notification Gateway</h4>
+                        <span>Channel: <strong>#social-approvals</strong></span>
+                    </div>
+                </div>
+                <button class="btn-close-drawer" id="btn-close-slack">×</button>
+            </div>
+            
+            <div class="slack-messages-container" id="slack-messages">
+                <!-- Slack messages are rendered here dynamically -->
+            </div>
+        </div>
+
+        <!-- Creator Modal: Trigger Agent Run -->
+        <div class="modal-overlay" id="creator-modal">
+            <div class="modal-card">
+                <div class="modal-header">
+                    <h3>🚀 Run Autonomous Agent Workflow</h3>
+                    <button class="btn-close-modal" id="btn-close-creator">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Select Agent Topic Template</label>
+                        <select class="form-control" id="agent-template-select">
+                            <option value="custom">-- Create Custom Post --</option>
+                            <option value="0">Modern Front-end Aesthetics</option>
+                            <option value="1">Model Context Protocol (MCP)</option>
+                            <option value="2">LangGraph State Machines</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Platform Target</label>
+                        <select class="form-control" id="agent-platform-select">
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="twitter">Twitter / X</option>
+                            <option value="instagram">Instagram</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Post Topic / Focus</label>
+                        <input type="text" class="form-control" id="agent-topic-input" placeholder="e.g. Benefits of micro-interactions">
+                    </div>
+                    <div class="form-group">
+                        <label>Copy Tone</label>
+                        <select class="form-control" id="agent-tone-select">
+                            <option value="Inspiring & Professional">Inspiring & Professional</option>
+                            <option value="Tech-savvy & Direct">Tech-savvy & Direct</option>
+                            <option value="Educational">Educational</option>
+                            <option value="Casual & Relatable">Casual & Relatable</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Additional Context / Prompt Directive</label>
+                        <textarea class="form-control" id="agent-prompt-input" rows="3" placeholder="Provide extra guidance for the LLM Copywriter..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="btn-cancel-creator">Cancel</button>
+                    <button class="btn btn-primary" id="btn-trigger-agent">Compile & Run Agent</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revision Modal: Request Revision -->
+        <div class="modal-overlay" id="revision-modal">
+            <div class="modal-card">
+                <div class="modal-header">
+                    <h3>🔄 Request Agent Revision</h3>
+                    <button class="btn-close-modal" id="btn-close-revision">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Enter the explicit feedback to return to the CopywriterAgent. The LangGraph state machine will re-route back to the generator node using this new parameter.</p>
+                    <div class="form-group">
+                        <label>Revision Directives</label>
+                        <textarea class="form-control" id="revision-feedback-input" rows="4" placeholder="e.g., Shorten the middle paragraph and add two more modern visual hashtags..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="btn-cancel-revision">Cancel</button>
+                    <button class="btn btn-primary" id="btn-submit-revision">Send to Agent Node</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script assets -->
+    <script src="mock-data.js"></script>
+    <script src="agent-workflow.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
