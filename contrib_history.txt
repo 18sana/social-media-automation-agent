@@ -1,0 +1,1 @@
+[2025-06-01T19:18:05] fix: resolved event synchronization logic inside calendar grid
