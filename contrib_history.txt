@@ -1,1 +1,2 @@
 [2025-06-01T19:18:05] fix: resolved event synchronization logic inside calendar grid
+[2025-06-01T13:29:19] feat: add Slack webhook notification payload templates
