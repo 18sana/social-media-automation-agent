@@ -3,3 +3,4 @@
 [2025-06-01T14:56:06] feat: implement LangGraph cyclic state transition handler
 [2025-06-01T10:58:23] test: write automated unit tests for state machine execution
 [2025-06-01T11:39:29] feat: support non-Gregorian calendar calculations in scheduler
+[2025-06-04T13:24:47] docs: document OAuth credential management procedures
