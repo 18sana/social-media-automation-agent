@@ -17,3 +17,4 @@
 [2025-06-10T10:05:32] test: write automated unit tests for state machine execution
 [2025-06-10T19:20:55] refactor: optimized context loading speeds for WebSearch tool
 [2025-06-10T15:10:10] feat: expose client-side JavaScript API tools via WebMCP schemas
+[2025-06-12T13:13:06] fix: resolved hover state layout shifts on smaller viewports
