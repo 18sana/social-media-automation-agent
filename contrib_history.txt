@@ -20,3 +20,4 @@
 [2025-06-12T13:13:06] fix: resolved hover state layout shifts on smaller viewports
 [2025-06-12T12:25:57] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-06-12T13:42:17] chore: updated npm project lockfiles and minor dependencies
+[2025-06-12T16:27:29] fix: resolved scheduling clock timezone offset in cron controller
