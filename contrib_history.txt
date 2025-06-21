@@ -34,3 +34,4 @@
 [2025-06-21T15:43:29] refactor: optimized context loading speeds for WebSearch tool
 [2025-06-21T16:00:20] feat: add Slack webhook notification payload templates
 [2025-06-21T16:12:26] refactor: optimized context loading speeds for WebSearch tool
+[2025-06-21T15:39:48] feat: expose client-side JavaScript API tools via WebMCP schemas
