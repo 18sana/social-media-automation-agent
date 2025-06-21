@@ -31,3 +31,4 @@
 [2025-06-17T12:52:06] docs: update readme guides with production deployment schemas
 [2025-06-17T19:27:20] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-06-21T12:18:35] feat: support non-Gregorian calendar calculations in scheduler
+[2025-06-21T15:43:29] refactor: optimized context loading speeds for WebSearch tool
