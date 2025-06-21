@@ -32,3 +32,4 @@
 [2025-06-17T19:27:20] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-06-21T12:18:35] feat: support non-Gregorian calendar calculations in scheduler
 [2025-06-21T15:43:29] refactor: optimized context loading speeds for WebSearch tool
+[2025-06-21T16:00:20] feat: add Slack webhook notification payload templates
