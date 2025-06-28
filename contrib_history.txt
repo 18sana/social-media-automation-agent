@@ -46,3 +46,4 @@
 [2025-06-28T09:03:49] docs: document OAuth credential management procedures
 [2025-06-28T18:25:45] fix: resolved event synchronization logic inside calendar grid
 [2025-06-28T19:39:27] fix: resolved event synchronization logic inside calendar grid
+[2025-06-28T14:12:14] style: adjusted dashboard cards HSL glow effects and shadows
