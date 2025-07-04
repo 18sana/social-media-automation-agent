@@ -50,3 +50,4 @@
 [2025-06-28T14:55:48] fix: resolved scheduling clock timezone offset in cron controller
 [2025-07-04T10:09:01] feat: support non-Gregorian calendar calculations in scheduler
 [2025-07-04T17:35:52] fix: resolved event synchronization logic inside calendar grid
+[2025-07-04T12:26:07] chore: updated npm project lockfiles and minor dependencies
