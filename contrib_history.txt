@@ -63,3 +63,4 @@
 [2025-07-08T18:56:26] chore: updated npm project lockfiles and minor dependencies
 [2025-07-10T13:47:28] perf: reduced rendering paint times of LCP visual elements
 [2025-07-10T11:36:12] docs: document OAuth credential management procedures
+[2025-07-10T10:02:39] feat: support non-Gregorian calendar calculations in scheduler
