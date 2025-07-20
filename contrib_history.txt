@@ -76,3 +76,4 @@
 [2025-07-20T10:14:17] refactor: optimized context loading speeds for WebSearch tool
 [2025-07-20T12:52:11] refactor: optimized context loading speeds for WebSearch tool
 [2025-07-20T16:45:12] feat: expose client-side JavaScript API tools via WebMCP schemas
+[2025-07-20T12:20:46] docs: document OAuth credential management procedures
