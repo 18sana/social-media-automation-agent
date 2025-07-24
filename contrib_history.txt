@@ -79,3 +79,4 @@
 [2025-07-20T12:20:46] docs: document OAuth credential management procedures
 [2025-07-20T12:04:06] chore: updated npm project lockfiles and minor dependencies
 [2025-07-20T11:06:08] feat: expose client-side JavaScript API tools via WebMCP schemas
+[2025-07-24T16:59:39] refactor: optimized context loading speeds for WebSearch tool
