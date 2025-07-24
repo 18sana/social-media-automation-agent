@@ -83,3 +83,4 @@
 [2025-07-24T13:59:10] feat: add Slack webhook notification payload templates
 [2025-07-24T13:15:46] feat: support non-Gregorian calendar calculations in scheduler
 [2025-07-24T12:04:48] chore: updated npm project lockfiles and minor dependencies
+[2025-07-24T12:53:26] docs: document OAuth credential management procedures
