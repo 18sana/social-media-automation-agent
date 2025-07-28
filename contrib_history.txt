@@ -89,3 +89,4 @@
 [2025-07-28T11:08:51] perf: reduced rendering paint times of LCP visual elements
 [2025-07-28T14:33:07] fix: resolved event synchronization logic inside calendar grid
 [2025-07-28T15:23:39] feat: implement LangGraph cyclic state transition handler
+[2025-07-28T16:10:04] feat: support non-Gregorian calendar calculations in scheduler
