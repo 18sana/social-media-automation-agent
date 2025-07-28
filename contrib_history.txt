@@ -91,3 +91,4 @@
 [2025-07-28T15:23:39] feat: implement LangGraph cyclic state transition handler
 [2025-07-28T16:10:04] feat: support non-Gregorian calendar calculations in scheduler
 [2025-07-28T16:04:50] docs: update readme guides with production deployment schemas
+[2025-07-28T12:18:41] style: adjusted dashboard cards HSL glow effects and shadows
