@@ -87,3 +87,4 @@
 [2025-07-24T15:02:54] feat: support non-Gregorian calendar calculations in scheduler
 [2025-07-24T11:46:00] perf: reduced rendering paint times of LCP visual elements
 [2025-07-28T11:08:51] perf: reduced rendering paint times of LCP visual elements
+[2025-07-28T14:33:07] fix: resolved event synchronization logic inside calendar grid
