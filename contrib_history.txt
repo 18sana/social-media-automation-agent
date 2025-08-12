@@ -112,3 +112,4 @@
 [2025-08-08T13:06:58] refactor: optimized context loading speeds for WebSearch tool
 [2025-08-08T19:56:49] test: write automated unit tests for state machine execution
 [2025-08-08T09:16:00] feat: add Slack webhook notification payload templates
+[2025-08-12T19:53:36] feat: support non-Gregorian calendar calculations in scheduler
