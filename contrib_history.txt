@@ -114,3 +114,4 @@
 [2025-08-08T09:16:00] feat: add Slack webhook notification payload templates
 [2025-08-12T19:53:36] feat: support non-Gregorian calendar calculations in scheduler
 [2025-08-12T10:54:35] feat: expose client-side JavaScript API tools via WebMCP schemas
+[2025-08-12T19:23:53] feat: expose client-side JavaScript API tools via WebMCP schemas
