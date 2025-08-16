@@ -121,3 +121,4 @@
 [2025-08-16T18:48:59] fix: resolved event synchronization logic inside calendar grid
 [2025-08-16T10:10:19] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-08-16T10:04:20] fix: resolved event synchronization logic inside calendar grid
+[2025-08-16T16:42:00] feat: expose client-side JavaScript API tools via WebMCP schemas
