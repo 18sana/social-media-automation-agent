@@ -119,3 +119,4 @@
 [2025-08-12T14:16:06] perf: reduced rendering paint times of LCP visual elements
 [2025-08-12T18:37:21] fix: resolved scheduling clock timezone offset in cron controller
 [2025-08-16T18:48:59] fix: resolved event synchronization logic inside calendar grid
+[2025-08-16T10:10:19] feat: expose client-side JavaScript API tools via WebMCP schemas
