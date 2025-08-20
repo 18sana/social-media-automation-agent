@@ -129,3 +129,4 @@
 [2025-08-20T19:46:55] fix: resolved hover state layout shifts on smaller viewports
 [2025-08-20T17:13:46] test: write automated unit tests for state machine execution
 [2025-08-20T15:42:16] refactor: optimized context loading speeds for WebSearch tool
+[2025-08-20T18:23:25] feat: expose client-side JavaScript API tools via WebMCP schemas
