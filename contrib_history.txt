@@ -126,3 +126,4 @@
 [2025-08-16T10:32:42] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-08-20T18:54:33] docs: document OAuth credential management procedures
 [2025-08-20T18:51:21] feat: add Slack webhook notification payload templates
+[2025-08-20T19:46:55] fix: resolved hover state layout shifts on smaller viewports
