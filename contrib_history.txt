@@ -135,3 +135,4 @@
 [2025-08-25T09:27:17] feat: add Slack webhook notification payload templates
 [2025-08-25T15:32:17] feat: support non-Gregorian calendar calculations in scheduler
 [2025-08-25T16:45:51] fix: resolved hover state layout shifts on smaller viewports
+[2025-08-25T17:03:35] fix: resolved event synchronization logic inside calendar grid
