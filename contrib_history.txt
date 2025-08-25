@@ -134,3 +134,4 @@
 [2025-08-25T16:43:58] test: write automated unit tests for state machine execution
 [2025-08-25T09:27:17] feat: add Slack webhook notification payload templates
 [2025-08-25T15:32:17] feat: support non-Gregorian calendar calculations in scheduler
+[2025-08-25T16:45:51] fix: resolved hover state layout shifts on smaller viewports
