@@ -141,3 +141,4 @@
 [2025-08-29T13:44:35] style: adjusted dashboard cards HSL glow effects and shadows
 [2025-08-29T13:27:18] fix: resolved event synchronization logic inside calendar grid
 [2025-08-29T17:49:54] chore: updated npm project lockfiles and minor dependencies
+[2025-08-29T15:44:08] feat: expose client-side JavaScript API tools via WebMCP schemas
