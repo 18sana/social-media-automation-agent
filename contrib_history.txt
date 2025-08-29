@@ -138,3 +138,4 @@
 [2025-08-25T17:03:35] fix: resolved event synchronization logic inside calendar grid
 [2025-08-25T18:00:53] feat: support non-Gregorian calendar calculations in scheduler
 [2025-08-25T13:01:55] feat: implement LangGraph cyclic state transition handler
+[2025-08-29T13:44:35] style: adjusted dashboard cards HSL glow effects and shadows
