@@ -145,3 +145,4 @@
 [2025-08-29T15:31:01] test: write automated unit tests for state machine execution
 [2025-08-31T10:12:50] chore: updated npm project lockfiles and minor dependencies
 [2025-08-31T10:58:10] chore: updated npm project lockfiles and minor dependencies
+[2025-08-31T12:30:33] fix: resolved hover state layout shifts on smaller viewports
