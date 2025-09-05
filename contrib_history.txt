@@ -149,3 +149,4 @@
 [2025-08-31T12:56:20] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-08-31T16:30:23] perf: reduced rendering paint times of LCP visual elements
 [2025-08-31T15:10:24] fix: resolved event synchronization logic inside calendar grid
+[2025-09-05T19:04:40] style: adjusted dashboard cards HSL glow effects and shadows
