@@ -155,3 +155,4 @@
 [2025-09-05T17:55:00] perf: reduced rendering paint times of LCP visual elements
 [2025-09-05T16:26:22] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-09-05T18:15:23] fix: resolved event synchronization logic inside calendar grid
+[2025-09-10T10:49:48] feat: support non-Gregorian calendar calculations in scheduler
