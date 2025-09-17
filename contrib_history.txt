@@ -172,3 +172,4 @@
 [2025-09-17T09:02:09] fix: resolved scheduling clock timezone offset in cron controller
 [2025-09-17T12:58:57] refactor: optimized context loading speeds for WebSearch tool
 [2025-09-17T09:24:52] style: adjusted dashboard cards HSL glow effects and shadows
+[2025-09-17T09:18:01] docs: update readme guides with production deployment schemas
