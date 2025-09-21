@@ -177,3 +177,4 @@
 [2025-09-21T15:44:01] test: write automated unit tests for state machine execution
 [2025-09-21T18:55:38] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-09-21T18:42:46] feat: add Slack webhook notification payload templates
+[2025-09-21T11:47:15] fix: resolved hover state layout shifts on smaller viewports
