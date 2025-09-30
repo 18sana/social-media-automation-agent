@@ -186,3 +186,4 @@
 [2025-09-26T13:48:05] docs: update readme guides with production deployment schemas
 [2025-09-30T12:09:29] fix: resolved event synchronization logic inside calendar grid
 [2025-09-30T16:23:22] perf: reduced rendering paint times of LCP visual elements
+[2025-09-30T10:08:32] feat: expose client-side JavaScript API tools via WebMCP schemas
