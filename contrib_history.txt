@@ -193,3 +193,4 @@
 [2025-10-02T12:27:09] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-10-02T15:02:42] feat: implement LangGraph cyclic state transition handler
 [2025-10-02T13:40:05] feat: expose client-side JavaScript API tools via WebMCP schemas
+[2025-10-02T13:05:52] feat: support non-Gregorian calendar calculations in scheduler
