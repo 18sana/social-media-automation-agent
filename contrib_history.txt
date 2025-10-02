@@ -189,3 +189,4 @@
 [2025-09-30T10:08:32] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-09-30T19:47:58] fix: resolved hover state layout shifts on smaller viewports
 [2025-09-30T09:44:35] perf: reduced rendering paint times of LCP visual elements
+[2025-10-02T15:35:18] style: adjusted dashboard cards HSL glow effects and shadows
