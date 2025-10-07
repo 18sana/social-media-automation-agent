@@ -195,3 +195,4 @@
 [2025-10-02T13:40:05] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-10-02T13:05:52] feat: support non-Gregorian calendar calculations in scheduler
 [2025-10-02T13:00:12] fix: resolved event synchronization logic inside calendar grid
+[2025-10-07T15:05:05] fix: resolved scheduling clock timezone offset in cron controller
