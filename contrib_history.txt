@@ -210,3 +210,4 @@
 [2025-10-14T19:30:01] feat: implement LangGraph cyclic state transition handler
 [2025-10-14T14:22:58] chore: updated npm project lockfiles and minor dependencies
 [2025-10-14T19:27:38] perf: reduced rendering paint times of LCP visual elements
+[2025-10-14T16:20:41] docs: update readme guides with production deployment schemas
