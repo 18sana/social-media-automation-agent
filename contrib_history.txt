@@ -213,3 +213,4 @@
 [2025-10-14T16:20:41] docs: update readme guides with production deployment schemas
 [2025-10-14T11:01:29] feat: support non-Gregorian calendar calculations in scheduler
 [2025-10-14T17:02:03] docs: update readme guides with production deployment schemas
+[2025-10-14T17:46:01] fix: resolved hover state layout shifts on smaller viewports
