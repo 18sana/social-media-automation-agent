@@ -215,3 +215,4 @@
 [2025-10-14T17:02:03] docs: update readme guides with production deployment schemas
 [2025-10-14T17:46:01] fix: resolved hover state layout shifts on smaller viewports
 [2025-10-19T15:50:03] fix: resolved scheduling clock timezone offset in cron controller
+[2025-10-19T17:08:48] style: adjusted dashboard cards HSL glow effects and shadows
