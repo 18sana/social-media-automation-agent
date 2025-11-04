@@ -243,3 +243,4 @@
 [2025-11-04T11:39:16] docs: update readme guides with production deployment schemas
 [2025-11-04T12:36:17] fix: resolved hover state layout shifts on smaller viewports
 [2025-11-04T17:55:39] feat: expose client-side JavaScript API tools via WebMCP schemas
+[2025-11-04T14:34:28] feat: expose client-side JavaScript API tools via WebMCP schemas
