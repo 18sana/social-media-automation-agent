@@ -246,3 +246,4 @@
 [2025-11-04T14:34:28] feat: expose client-side JavaScript API tools via WebMCP schemas
 [2025-11-09T12:18:55] docs: update readme guides with production deployment schemas
 [2025-11-09T17:26:58] feat: support non-Gregorian calendar calculations in scheduler
+[2025-11-09T14:59:23] feat: add Slack webhook notification payload templates
